@@ -316,6 +316,13 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
+a.download_resources {
+  color: #187CFB;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border-bottom: #187CFB 1px solid;
+}
+
 .nav-menu > li {
   margin-left: 10px;
 }
