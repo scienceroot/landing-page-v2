@@ -25,7 +25,15 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
   <script src="js/particles.min.js"></script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WFKNG47');
+  </script>
 </head>
 
 <body>
@@ -45,11 +53,14 @@
           <li><a href="#contact">Contact Us</a></li>
           <li class="menu-has-children"><a href="#" class="disable download_resources">Resources</a>
             <ul>
+              <li><a href="resources/onepager.pdf" target="_blank">One Pager</a></li>
               <li><a href="resources/whitepaper.pdf" target="_blank">Whitepaper</a></li>
-              <!-- <li><a href="resources/short-intro.pdf" target="_blank">Short introduction</a></li> -->
-              <!-- <li><a href="resources/roadmap.pdf" target="_blank">Roadmap</a></li> -->
             </ul>
           </li>
+          <!-- aici vine un butonul de: Join our Ecosystem/Enter in the Ecosystem si
+          nu mai facem highlight la butonul de resources ci doar la asta.
+          <li><a href="https://app.scienceroot.com/" class="download_resources">Join our Ecosystem</a></li>
+          -->
         </ul>
       </nav>
     </div>
@@ -60,7 +71,7 @@
     <div id="particles-js"></div>
       
     <div class="intro-text">
-      <img src="img/logo.png" alt="" height="200">
+      <img src="img/logo.png" alt="" height="150">
       <h2>Scienceroot</h2>
       <p>
         The first blockchain-based scientific ecosystem to integrate a Social Media Scientific Network, Funding Platform and
@@ -69,6 +80,46 @@
       <p>
         It will cover all the required functionalities during the scientific discovery process.
       </p>
+    </div>
+
+    <div class="container add-top-80">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Token Generation Event</h3>
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-center">Stay tuned for news</h3>
+          <div class="form">
+            <form action="https://scienceroot.us17.list-manage.com/subscribe/post?u=38d314b2320ef2ebe19aee43f&amp;id=bebf350fa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" data-animate-subscribe="" data-sr-id="56" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+              <div class="form-group">
+                <input placeholder="Your Email" value="" 
+                        name="EMAIL" class="required email form-control" id="mce-EMAIL" type="email">
+              </div>
+              <div class="text-center">
+                <button type="submit" title="Subscribe">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <main id="main">
@@ -364,42 +415,48 @@
 
         <div class="row wow fadeInUp">
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <a href="http://exeterempirical.com/" target="_blank" title="Exeter Empirical">
               <img src="img/partners/exeter.png" height="90px" alt="Exeter Empirical" class="wow fadeInUp" />
             </a>
           </div>
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <a href="https://www.overleaf.com" title="Overleaf" target="_blank">
               <img src="https://www.overleaf.com/overleaf-partner/overleaf-greygreen-410.png"
                    alt="Overleaf" height="90px" class="wow fadeInUp" />
             </a>
           </div>
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <a href="http://www.stm-assoc.org/" title="STM" target="_blank">
               <img src="img/partners/stm.jpg" alt="STM" height="90px" class="wow fadeInUp" />
             </a>
           </div>
 
-          <div class="col-md-3 text-center">
-            <a href="http://www.blockchainforscience.com/" title="Blockchain for science" target="_blank">
-              <img src="img/partners/blockchain_for_science.jpg"
-                    alt="Blockchain for science" height="90px" class="wow fadeInUp" />
-            </a>
-          </div>
-
         </div>
 
-        <div class="row">
+        <div class="row add-top-25">
+
+          <div class="col-md-4 text-center">
+              <a href="http://www.blockchainforscience.com/" title="Blockchain for science" target="_blank">
+                <img src="img/partners/blockchain_for_science.jpg"
+                      alt="Blockchain for science" height="90px" class="wow fadeInUp" />
+              </a>
+            </div>
           
-          <div class="col text-center">
+          <div class="col-md-4 text-center">
             <a href="https://smarters.ro/" title="Smarters" target="_blank">
               <img src="img/partners/smarters.png" alt="Smarters" height="90px" class="wow fadeInUp" />
             </a>
           </div>
         
+          <div class="col-md-4 text-center">
+            <a href="https://unpaywall.org/" title="Unpaywall" target="_blank">
+              <img src="img/partners/unpaywall.jpg" alt="Unpaywall" height="90px" class="wow fadeInUp" />
+            </a>
+          </div>
+
         </div>
 
       </div>
@@ -643,8 +700,20 @@
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/garazi.jpg" alt="Garazi Monzó team member" width="140px"
+                 class="rounded-circle"></div>
+              <h4>Garazi Monzó Contreras</h4>
+              <span>Community Manager</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/garazimonzo/" target="_blank">
+                  <i class="fa fa-linkedin" target="_blank"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
 
@@ -868,20 +937,95 @@
 
       <section id="token-sale">
         <div class="container">
-
           <div class="section-header">
             <h3 class="section-title">Token sale</h3>
             <span class="section-divider"></span>
           </div>
-
-          <div class="row wow fadeInUp">
-
-            <div class="col text-center">
-              <h1>Coming soon!</h1>
+          <div class="row">
+            <div class="col-sm col-md-4">
+              <div class="wow fadeInLeft">
+                <h4 class="title">Pre-Sale</h4>
+                <p>15 May</p>
+                <h4 class="title">Initial Coin Offering</h4>
+                <p>15 June – 12 PM GMT+3 until 29 July – 12 PM GMT+3</p>
+                <h4 class="title">Price</h4>
+                <p>1 ST – 0.1$</p>
+              </div>
             </div>
-
+            <div class="col-md col-md-3">
+              <canvas class="wow fadeInRight" id="tokenAllocationChart" width="300vw" height="300vw"></canvas>
+            </div>
+            <div class="col-md-4">
+              <div class="wow fadeInRight">
+                <ul>
+                  <li style="color: rgb(42, 91, 252)">60% Tokensale</li>
+                  <li style="color: rgba(54, 162, 235)">15% Founders, Team, Advisors and Early Contributors</li>
+                  <li style="color: rgba(255, 206, 86)">3% Bounty, Airdrop, Community</li>
+                  <li style="color: rgba(75, 192, 192)">2% Referral</li>
+                  <li style="color: rgba(153, 102, 255)">20% Scienceroot Fund</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
+          <div class="row add-top-25">
+            <div class="col-sm col-md-4">
+              <div class="wow fadeInLeft">
+                <h4 class="title">Token Supply</h4>
+                <p>500 000 000</p>
+                <h4 class="title">Initial Coin Offering</h4>
+                <p>15 June – 12 PM GMT+3 until 29 July – 12 PM GMT+3</p>
+                <h4 class="title">Bonus Rounds</h4>
+                <p>Pre-Sale 40%</p>
+              </div>
+            </div>
+            <div class="col-md col-lg-3">
+                <canvas class="wow fadeInRight" id="useOfProceedsChart" width="300vw" height="300vw"></canvas>
+            </div>
+            <div class="col-md-4">
+              <div class="wow fadeInRight">
+                <ul>
+                  <li style="color: rgb(42, 91, 252)">30% Software Deelopment</li>
+                  <li style="color: rgba(54, 162, 235)">40% Business Development</li>
+                  <li style="color: rgba(255, 206, 86)">15% Operations and services</li>
+                  <li style="color: rgba(75, 192, 192)">10% Reserve and Unexpected</li>
+                  <li style="color: rgba(153, 102, 255)">5% Legal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row add-top-25">
+            <div class="col-sm col-md-2">
+              <div class="wow fadeInUp">
+                <h4 class="title">Hard Cap</h4>
+                <p>20 000 000 $</p>
+              </div>
+            </div>
+            <div class="col-sm col-md-2">
+              <div class="wow fadeInUp">
+                <h4 class="title">Min Cap</h4>
+                <p>1 000 000 $ </p>
+              </div>
+            </div>              
+            <div class="col-sm col-md-2">
+              <div class="wow fadeInUp">
+                <h4 class="title">Pre-Sale</h4>
+                <p>15 May</p>
+              </div>
+            </div>
+            <div class="col-sm col-md-3">
+              <div class="wow fadeInUp">
+                <h4 class="title">Week 1</h4>
+                <p>- 30 % – 15 June – 21 June</p>
+              </div>
+            </div>
+            <div class="col-sm col-md-3">
+              <div class="wow fadeInUp">
+                <h4 class="title">Week 2</h4>
+                <p>- 15 % – 22 June – 28 June</p>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -930,7 +1074,7 @@
                   </div>
                 </div>
         
-                <div class="roadmap__timeline-item roadmap__timeline-item--is-progress" data-animate-roadmap>
+                <div class="roadmap__timeline-item roadmap__timeline-item--is-complete" data-animate-roadmap>
                   <div>
                     <small>February 2018</small>
                     <i></i>
@@ -939,7 +1083,7 @@
                   </div>
                 </div>
         
-                <div class="roadmap__timeline-item" data-animate-roadmap>
+                <div class="roadmap__timeline-item roadmap__timeline-item--is-progress" data-animate-roadmap>
                   <div>
                     <small>April 2018</small>
                     <i></i>
@@ -1055,7 +1199,7 @@
                 <a href="https://t.me/scienceroot" class="telegram" target="_blank"><i class="fa fa-telegram"></i></a>
               </div>
             </div>
-            <h3 class="text-center">Keep in touch</h3>
+            <!-- <h3 class="text-center">Keep in touch</h3>
             <div class="form">
               <form action="https://scienceroot.us17.list-manage.com/subscribe/post?u=38d314b2320ef2ebe19aee43f&amp;id=bebf350fa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" data-animate-subscribe="" data-sr-id="56" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
                 <div class="form-group">
@@ -1066,7 +1210,7 @@
                   <button type="submit" title="Subscribe">Subscribe</button>
                 </div>
               </form>
-            </div>
+            </div> -->
 
           </div>
 
@@ -1381,6 +1525,157 @@
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="contactform/contactform.js"></script>
   <script src="js/main.js"></script>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFKNG47"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+      function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+          'total': t,
+          'days': days,
+          'hours': hours,
+          'minutes': minutes,
+          'seconds': seconds
+        };
+      }
+  
+      function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+  
+        function updateClock() {
+          var t = getTimeRemaining(endtime);
+  
+          daysSpan.innerHTML = t.days;
+          hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+          minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+          secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+  
+          if (t.total <= 0) {
+            clearInterval(timeinterval);
+          }
+        }
+  
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+      }
+      var deadline = new Date(2018, 5, 15, 12, 0, 0);
+      initializeClock('clockdiv', deadline);
+    </script>
+    <script>
+      var tokenAllocationChartContext = document.getElementById("tokenAllocationChart").getContext('2d');
+      var tokenAllocationChart = new Chart(tokenAllocationChartContext, {
+          type: 'doughnut',
+          data: {
+              labels: ["Tokensale 60%",
+                       "Founders, Team, Advisors and Early Contributors 15%",
+                       "Bounty, Airdrop, Community 3%",
+                       "Referral 2%",
+                       "Scienceroot Fund 20%"],
+              datasets: [{
+                  data: [60, 15, 3, 2, 20],
+                  backgroundColor: [
+                      // 'rgba(255, 99, 132, 0.2)',
+                      // 'rgba(54, 162, 235, 0.2)',
+                      // 'rgba(255, 206, 86, 0.2)',
+                      // 'rgba(75, 192, 192, 0.2)',
+                      // 'rgba(153, 102, 255, 0.2)'
+                      'rgba(42, 91, 252)',
+                      'rgba(54, 162, 235)',
+                      'rgba(255, 206, 86)',
+                      'rgba(75, 192, 192)',
+                      'rgba(153, 102, 255)'
+                  ],
+                  borderColor: [
+                      'rgba(42, 91, 252, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+            responsive: false,
+            title: {
+              display: true,
+              fontSize: 26,
+              fontColor: '#187CFB',
+              text: 'Token Allocation'
+            },
+            legend: {
+              position: 'top',
+              display: false,
+              labels: {
+                // This more specific font property overrides the global property
+                fontColor: "#FFFFFF",
+                fontSize: 18
+              }
+            }
+          }
+      });
 
+      var useOfProceedsChartContext = document.getElementById("useOfProceedsChart").getContext('2d');
+      var useOfProceedsChart = new Chart(useOfProceedsChartContext, {
+          type: 'doughnut',
+          data: {
+              labels: ["Software Deelopment 30%",
+                       "Business Development 40%",
+                       "Operations and services 15%",
+                       "Reserve and Unexpected 10%",
+                       "Legal 5%"],
+              datasets: [{
+                  data: [30, 40, 15, 10, 5],
+                  backgroundColor: [
+                      // 'rgba(255, 99, 132, 0.2)',
+                      // 'rgba(54, 162, 235, 0.2)',
+                      // 'rgba(255, 206, 86, 0.2)',
+                      // 'rgba(75, 192, 192, 0.2)',
+                      // 'rgba(153, 102, 255, 0.2)'
+                      'rgba(42, 91, 252)',
+                      'rgba(54, 162, 235)',
+                      'rgba(255, 206, 86)',
+                      'rgba(75, 192, 192)',
+                      'rgba(153, 102, 255)'
+                  ],
+                  borderColor: [
+                      'rgba(42, 91, 252)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+            responsive: false,
+            title: {
+              display: true,
+              // fontStyle: 'None',
+              fontSize: 26,
+              fontColor: '#187CFB',
+              text: 'Use of Proceeds'
+            },
+            legend: {
+              position: 'top',
+              display: false,
+              labels: {
+                // This more specific font property overrides the global property
+                fontColor: "#FFFFFF",
+                fontSize: 18
+              }
+            }
+          }
+      });
+      </script>
 </body>
 </html>
