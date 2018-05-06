@@ -1,0 +1,128 @@
+body {
+  color: #100F1F;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* a {
+  color: #187CFB;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #187CFB;
+  outline: none;
+  text-decoration: none;
+} */
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.add-top-40 {
+  margin-top: 40px;
+}
+
+.section-header .section-title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  font-style: italic;
+}
+
+.section-header .section-divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: rgba(157, 71, 255, 0.788);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#about {
+  overflow: hidden;
+}
+
+#about .content .h2 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+#about .content h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about h3 {
+  color: #100F1F;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#sendmessage {
+  color: #1dcdae;
+  border: 1px solid #0baf82;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#sendmessage.show, #errormessage.show {
+  display: block;
+}
+
+.companyEarlyAccessForm .validation, .checkbox-validation,
+.individualEarlyAccessForm .validation, .checkbox-validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.companyEarlyAccessForm button[type="submit"],
+.individualEarlyAccessForm button[type="submit"] {
+  background-color: #187CFB;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+}
+
+.companyEarlyAccessForm button[type="submit"]:hover,
+.individualEarlyAccessForm button[type="submit"]:hover {
+  cursor: pointer;
+}
