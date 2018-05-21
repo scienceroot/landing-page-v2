@@ -63,9 +63,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
   padding: 30px 0;
   height: 92px;
@@ -126,9 +123,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
 #intro {
   width: 100%;
   height: 100vh;
@@ -137,32 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-text {
-  padding-top: 120px;
+  padding-top: 100px;
   text-align: center;
   vertical-align: top;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* margin: -330px 0 0 -500px; */
 }
-
-/* @media (max-height: 768px) {
-  #intro .intro-text {
-    padding-top: 80px;
-  }
-} */
-
-/* @media (min-width: 768px) {
-  #intro .intro-text {
-    padding-top: 180px;
-  }
-}
-
-@media (max-width: 767px) {
-  #intro .intro-text {
-    padding-top: 50px;
-  }
-} */
 
 @media (min-width: 1024px) {
   #intro {
@@ -171,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro h2 {
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
   padding: 0 15px;
   font-size: 48px;
   font-weight: 400;
