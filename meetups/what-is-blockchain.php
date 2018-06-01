@@ -49,16 +49,16 @@
         </div>
         <div class="row">
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/what-is-blockchain/pic1.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/what-is-blockchain/pic1.jpg" class="wow fadeInUp" />
           </div>
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/what-is-blockchain/pic2.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/what-is-blockchain/pic2.jpg" class="wow fadeInUp" />
           </div>
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/what-is-blockchain/pic3.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/what-is-blockchain/pic3.jpg" class="wow fadeInUp" />
           </div>
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/what-is-blockchain/pic4.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/what-is-blockchain/pic4.jpg" class="wow fadeInUp" />
           </div>
         </div>
 

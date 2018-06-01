@@ -49,25 +49,25 @@
         </div>
         <div class="row">
           <div class="col-md-3 text-center">
-              <img src="../img/meetups/blockchain-for-open-science/pic1.jpg" class="wow fadeInUp about-img" />
+              <img src="../img/meetups/blockchain-for-open-science/pic1.jpg" class="wow fadeInUp" />
           </div>
   
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/blockchain-for-open-science/pic2.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/blockchain-for-open-science/pic2.jpg" class="wow fadeInUp" />
           </div>
 
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/blockchain-for-open-science/pic3.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/blockchain-for-open-science/pic3.jpg" class="wow fadeInUp" />
           </div>
 
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/blockchain-for-open-science/pic4.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/blockchain-for-open-science/pic4.jpg" class="wow fadeInUp" />
           </div>
 
         </div>
         <div class="row">
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/blockchain-for-open-science/pic5.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/blockchain-for-open-science/pic5.jpg" class="wow fadeInUp" />
           </div>          
         </div>
       </div>

@@ -49,15 +49,15 @@
         </div>
         <div class="row">
           <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic1.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic1.jpg" class="wow fadeInUp" />
           </div>
   
           <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic2.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic2.jpg" class="wow fadeInUp" />
           </div>
 
           <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic3.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic3.jpg" class="wow fadeInUp" />
           </div>
 
         </div>

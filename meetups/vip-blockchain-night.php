@@ -49,19 +49,19 @@
         </div>
         <div class="row">
           <div class="col-md-3 text-center">
-              <img src="../img/meetups/vip-blockchain-night/vip1.jpg" class="wow fadeInUp about-img" />
+              <img src="../img/meetups/vip-blockchain-night/vip1.jpg" class="wow fadeInUp" />
           </div>
   
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip2.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/vip-blockchain-night/vip2.jpg" class="wow fadeInUp" />
           </div>
 
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip3.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/vip-blockchain-night/vip3.jpg" class="wow fadeInUp" />
           </div>
 
           <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip4.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/vip-blockchain-night/vip4.jpg" class="wow fadeInUp" />
           </div>
         </div>
       </div>

@@ -49,11 +49,11 @@
         </div>
         <div class="row">
           <div class="col-md-6 text-center">
-              <img src="../img/meetups/waves-ico-expert-talks/pic1.jpg" class="wow fadeInUp about-img" />
+              <img src="../img/meetups/waves-ico-expert-talks/pic1.jpg" class="wow fadeInUp" />
           </div>
   
           <div class="col-md-6 text-center">
-            <img src="../img/meetups/waves-ico-expert-talks/pic2.jpg" class="wow fadeInUp about-img" />
+            <img src="../img/meetups/waves-ico-expert-talks/pic2.jpg" class="wow fadeInUp" />
           </div>
         </div>
 
