@@ -124,7 +124,7 @@ jQuery(document).ready(function($) {
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS.load('particles-js', 'js/config/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
+    // code goes here only when debugging.
   });
 
   $(function () {
