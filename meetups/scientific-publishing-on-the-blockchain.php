@@ -47,19 +47,11 @@
             <a href="https://www.blockchainforscience.com/2018/02/09/sponbc2018/" target="_blank">https://www.blockchainforscience.com/2018/02/09/sponbc2018/</a>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic1.jpg" class="wow fadeInUp" />
-          </div>
-  
-          <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic2.jpg" class="wow fadeInUp" />
-          </div>
 
-          <div class="col-md-4 text-center">
-            <img src="../img/meetups/scientific-publishing-on-the-blockchain/pic3.jpg" class="wow fadeInUp" />
-          </div>
-
+<?php
+  require_once('functions.php');
+  showSciencerootMeetupPictures("scientific-publishing-on-the-blockchain");
+?>
         </div>
        
       </div>

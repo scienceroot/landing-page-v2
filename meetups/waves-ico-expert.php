@@ -47,15 +47,11 @@
             <a href="https://www.meetup.com/Waves-platform-CE/events/249190041/" target="_blank">https://www.meetup.com/Waves-platform-CE/events/249190041/</a>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-6 text-center">
-              <img src="../img/meetups/waves-ico-expert-talks/pic1.jpg" class="wow fadeInUp" />
-          </div>
-  
-          <div class="col-md-6 text-center">
-            <img src="../img/meetups/waves-ico-expert-talks/pic2.jpg" class="wow fadeInUp" />
-          </div>
-        </div>
+
+<?php
+  require_once('functions.php');
+  showSciencerootMeetupPictures("waves-ico-expert-talks");
+?>
 
       </div>
     </section>

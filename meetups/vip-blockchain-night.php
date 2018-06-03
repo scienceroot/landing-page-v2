@@ -47,23 +47,10 @@
             <a href="http://co-agency.at/vip-night-by-co-agency/" target="_blank">http://co-agency.at/vip-night-by-co-agency/</a>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-3 text-center">
-              <img src="../img/meetups/vip-blockchain-night/vip1.jpg" class="wow fadeInUp" />
-          </div>
-  
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip2.jpg" class="wow fadeInUp" />
-          </div>
-
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip3.jpg" class="wow fadeInUp" />
-          </div>
-
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/vip-blockchain-night/vip4.jpg" class="wow fadeInUp" />
-          </div>
-        </div>
+<?php
+  require_once('functions.php');
+  showSciencerootMeetupPictures("vip-blockchain-night");
+?>
       </div>
     </section>
   </main>

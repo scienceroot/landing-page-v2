@@ -47,49 +47,10 @@
             <a href="https://www.eventbrite.co.uk/e/demo-night-by-how-to-web-techhub-blockchain-and-fintech-edition-tickets-44649346397#" target="_blank">https://www.eventbrite.co.uk/e/demo-night-by-how-to-web-techhub-blockchain-and-fintech-edition-tickets-44649346397#</a>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic1.jpg" class="wow fadeInUp" />
-          </div>
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic2.jpg" class="wow fadeInUp" />
-          </div>
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic3.jpg" class="wow fadeInUp" />
-          </div>
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic4.jpg" class="wow fadeInUp" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic5.jpg" class="wow fadeInUp" />
-          </div>
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic6.jpg" class="wow fadeInUp" />
-          </div> 
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic7.jpg" class="wow fadeInUp" />
-          </div> 
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic8.jpg" class="wow fadeInUp" />
-          </div>        
-        </div>
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic9.jpg" class="wow fadeInUp" />
-          </div>
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic10.jpg" class="wow fadeInUp" />
-          </div> 
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic11.jpg" class="wow fadeInUp" />
-          </div> 
-          <div class="col-md-3 text-center">
-            <img src="../img/meetups/demo-night-by-how-to-web/pic12.jpg" class="wow fadeInUp" />
-          </div>        
-        </div>
-      </div>
+<?php
+  require_once('functions.php');
+  showSciencerootMeetupPictures("demo-night-by-how-to-web");
+?>
     </section>
   </main>
 
