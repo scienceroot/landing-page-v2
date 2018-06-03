@@ -1272,10 +1272,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: none;
 }
 
+#meetups {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+#meetups .card {
+  width: 290px;
+  margin-bottom: 20px;
+}
+
+#meetups .card-img {
+  height: 170px;
+  width: 290px;
+}
+
 #contact {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
   overflow: hidden;
+  background: #ffffff;
 }
 
 #contact .contact-about h3 {
@@ -1294,7 +1310,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
-  color: white;
 }
 
 #contact .social-links {
@@ -1320,10 +1335,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .social-links a:hover {
   background-color: #187CFB;
   color: #fff;
-}
-
-#contact .info {
-  color: white;
 }
 
 #contact .info i {
@@ -1399,19 +1410,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer {
-  background: #ffffff;
+  background: #100F1F;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
   font-size: 14px;
-}
-
-#footer .credits {
-  font-size: 13px;
-  color: #888;
+  color: #ffffff;
 }
 
 #footer .footer-links a {
-  color: #100F1F;
+  color: #ffffff;
   padding-left: 15px;
 }
 
