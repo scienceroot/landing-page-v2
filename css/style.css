@@ -1277,6 +1277,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
+#meetups .card-title, .card-text {
+  color: #ffffff;
+}
+
 #meetups .card {
   width: 290px;
   margin-bottom: 20px;
