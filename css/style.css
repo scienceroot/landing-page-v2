@@ -331,6 +331,22 @@ a.download_resources {
   text-transform: none;
 }
 
+a.blue-button-menu {
+  background-color: #187CFB;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+}
+
+a.blue-button {
+  background-color: #187CFB;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+}
+
 .nav-menu ul li:hover > a {
   color: #1dc8cd;
 }
@@ -424,6 +440,13 @@ a.download_resources {
 
 #mobile-nav ul .menu-item-active {
   color: #187CFB;
+}
+
+#mobile-nav a.download_resources {
+  color: #FFFFFF;
+  text-transform: none;
+  border-radius: 0px;
+  border-bottom: none;
 }
 
 #mobile-body-overly {
