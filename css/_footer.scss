@@ -1,5 +1,5 @@
 #footer {
-  @extend %white-section-base;
+  @extend %dark-blue-section-base;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
   font-size: 14px;
@@ -14,7 +14,7 @@
 
   .footer-links {
     a {
-      color: $dark-blue;
+      color: $white;
       padding-left: 15px;
 
       &:first-child {
@@ -23,6 +23,7 @@
 
       &:hover {
         color: $blue;
+        text-decoration: none;
       }
     }
   }

@@ -1,5 +1,5 @@
 #faq  {
-    @extend %white-section-base;
+    @extend %dark-blue-section-base;
     padding: 60px 0;
     overflow: hidden;
   
@@ -8,7 +8,7 @@
       list-style: none;
   
       li {
-        border-bottom: 1px solid $dark-blue;
+        border-bottom: 1px solid $white;
       }
   
       a {
@@ -20,6 +20,11 @@
         line-height: 1;
         font-weight: 300;
         padding-right: 20px;
+
+        &:hover {
+          text-decoration: none;
+          color: $blue;
+        }
       }
   
       i {
@@ -48,9 +53,14 @@
       }
   
       a.collapsed {
-        color: $dark-blue;
+        color: $white;
         i::before {
           content: "\f2c7" !important;
+        }
+
+        &:hover{
+          text-decoration: none;
+          color: $blue;
         }
       }
     }

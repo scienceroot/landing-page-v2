@@ -47,10 +47,10 @@
             <a href="https://bisshow.com/ " target="_blank">https://bisshow.com/ </a>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-3 text-center">
-          </div>
-      </div>
+          <?php
+            require_once('functions.php');
+            showSciencerootMeetupPictures("blockchain-international-show");
+          ?>
     </section>
   </main>
 
