@@ -1,12 +1,7 @@
-// main: style.scss
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  @extend %white-section-base;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
-  color: #333;
   font-size: 14px;
 
   .copyright {
@@ -19,13 +14,15 @@
 
   .footer-links {
     a {
-      color: #666;
+      color: $dark-blue;
       padding-left: 15px;
+
       &:first-child {
         padding-left: 0;
       }
+
       &:hover {
-        color: $accent-color;
+        color: $blue;
       }
     }
   }

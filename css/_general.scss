@@ -1,24 +1,47 @@
-// main: style.scss
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+%dark-blue-section-base {
+  background: $dark-blue;
+  color: $white;
+
+  .section-title {
+    color: $white;
+    text-align: center;
+  }
+}
+
+%white-section-base {
+  background: $white;
+  color: $dark-blue;
+
+  .section-title {
+    color: $dark-blue;
+    text-align: center;
+  }
+}
+
 body {
-  background: #fff;
-  color: $text-color;
+  @extend %white-section-base;
   font-family: $text-font;
   overflow-x: hidden;
 }
 
 a {
-  color: $accent-color;
+  color: $blue;
   transition: 0.5s;
+
+  &.blue-button {
+    background-color: $blue;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: $white;
+  }
 }
 
-a:hover, a:active, a:focus {
-  color: lighten($accent-color, 0.2%);
-  outline: none;
-  text-decoration: none;
-}
+// a:hover, a:active, a:focus {
+  // color: lighten($blue, 0.2%);
+  // outline: none;
+  // text-decoration: none;
+// }
 
 p {
   padding: 0;
@@ -32,12 +55,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-/* Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
-  color: #fff;
+  background-color: $dark-blue;
+  color: $white;
   padding: 2px 20px 8px 20px;
   font-size: 16px;
   border-radius: 4px 4px 0 0;
@@ -46,13 +68,23 @@ h1, h2, h3, h4, h5, h6 {
   transition: none;
 
   &:focus {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
-    color: #fff;
+    background: $dark-blue;
+    color: $white;
     outline: none;
   }
 
   &:hover {
-    background: $accent_color;
-    color: #fff;
+    background: $blue;
+    color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .add-top-25 {
+    margin-top: 25px;
+  }
+
+  .add-top-80 {
+    margin-top: 80px;
   }
 }

@@ -1,7 +1,3 @@
-// main: style.scss
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
   padding: 30px 0;
   height: 92px;
@@ -28,12 +24,13 @@
     }
 
     h1 a, h1 a:hover {
-      color: #fff;
+      color: $white;
     }
 
     img {
       padding: 0;
       margin: 0;
+      height: 50px;
     }
   }
 
@@ -51,7 +48,7 @@
   }
 
   &.header-fixed  {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    background-color: $dark-blue;
     padding: 20px 0;
     height: 72px;
     transition: all 0.5s;
@@ -59,40 +56,51 @@
 
 }
 
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url('../img/intro-bg.jpg') center top no-repeat;
-  background-size: cover;
   position: relative;
+  background: $dark-blue;
+  // background-size: cover;
   
-  @media (min-width: 1024px) {
-    background-attachment: fixed;
-  }
+  // @media (min-width: 1024px) {
+  //   background-attachment: fixed;
+  // }
 
   .intro-text {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    right: 0;
-    height: calc(50% - 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // position: absolute;
+    // left: 0;
+    // top: 60px;
+    // right: 0;
+    // height: calc(50% - 60px);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding-top: 100px;
     text-align: center;
-    flex-direction: column;
+    vertical-align: top;
+    // flex-direction: column;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: $white;
   }
 
   h2 {
-    margin: 30px 0 10px 0;
+    margin: 20px 0 10px 0;
     padding: 0 15px;
     font-size: 48px;
     font-weight: 400;
     line-height: 56px;
-    color: #fff;
+    color: $white;
     @media (max-width: 768px) {
       font-size: 28px;
       line-height: 36px;
@@ -100,7 +108,7 @@
   }
 
   p {
-    color: #fff;
+    color: $white;
     margin-bottom: 20px;
     padding: 0 15px;
     font-size: 24px;
@@ -112,73 +120,109 @@
     }
   }
 
-  .btn-get-started {
-    font-family: $heading-font;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 1px;
+  #clockdiv{
+    color: $white;
     display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-    &:hover {
-      color: $accent-color;
-      background: #fff;
-    }
-  }
-
-  .product-screens {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+    font-weight: 100;
     text-align: center;
-    width: 100%;
-    height: 50%;
-
-    img {
-      box-shadow: 0px -2px 19px 4px rgba(0,0,0,0.29);
-    }
-
-    .product-screen-1 {
-      position: absolute;
-      z-index: 30;
-      left: calc(50% + 54px);
-      bottom: 0;
-      top: 30px;
-    }
-
-    .product-screen-2 {
-      position: absolute;
-      z-index: 20;
-      left: calc(50% - 154px);
-      bottom: 0;
-      top: 90px;
-    }
-
-    .product-screen-3 {
-      position: absolute;
-      z-index: 10;
-      left: calc(50% - 374px);
-      bottom: 0;
-      top: 150px;
-    }
-
-    @media (max-width: 767px) {
-      .product-screen-1 {
-        position: static;
-        padding-top: 30px;
-      }
-
-      .product-screen-2, .product-screen-3 {
-        display: none;
-      }
-    }
-
+    font-size: 30px;
   }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: $blue;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .smalltext{
+    font-size: 16px;
+  }
+
+  .form button[type="submit"] {
+    background-color: $blue;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: $white;
+  }
+  
+  .form button[type="submit"]:hover {
+    cursor: pointer;
+  }
+
+  // .btn-get-started {
+  //   font-family: $heading-font;
+  //   font-weight: 400;
+  //   font-size: 16px;
+  //   letter-spacing: 1px;
+  //   display: inline-block;
+  //   padding: 8px 28px;
+  //   border-radius: 50px;
+  //   transition: 0.5s;
+  //   margin: 10px;
+  //   border: 2px solid #fff;
+  //   color: #fff;
+  //   &:hover {
+  //     color: $blue;
+  //     background: #fff;
+  //   }
+  // }
+
+  // .product-screens {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   overflow: hidden;
+  //   text-align: center;
+  //   width: 100%;
+  //   height: 50%;
+
+  //   img {
+  //     box-shadow: 0px -2px 19px 4px rgba(0,0,0,0.29);
+  //   }
+
+  //   .product-screen-1 {
+  //     position: absolute;
+  //     z-index: 30;
+  //     left: calc(50% + 54px);
+  //     bottom: 0;
+  //     top: 30px;
+  //   }
+
+  //   .product-screen-2 {
+  //     position: absolute;
+  //     z-index: 20;
+  //     left: calc(50% - 154px);
+  //     bottom: 0;
+  //     top: 90px;
+  //   }
+
+  //   .product-screen-3 {
+  //     position: absolute;
+  //     z-index: 10;
+  //     left: calc(50% - 374px);
+  //     bottom: 0;
+  //     top: 150px;
+  //   }
+
+  //   @media (max-width: 767px) {
+  //     .product-screen-1 {
+  //       position: static;
+  //       padding-top: 30px;
+  //     }
+
+  //     .product-screen-2, .product-screen-3 {
+  //       display: none;
+  //     }
+  //   }
+
+  // }
 
 }
