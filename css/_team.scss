@@ -1,0 +1,47 @@
+#team {
+    @extend %dark-blue-section-base;
+    padding: 60px 0;
+    overflow: hidden;
+  
+    .member {
+      text-align: center;
+      margin-bottom: 20px;
+      .pic {
+        margin-bottom: 15px;
+        overflow: hidden;
+  
+        img {
+          max-width: 100%;
+        }
+  
+      }
+  
+      h4 {
+        font-weight: 700;
+        margin-bottom: 2px;
+        font-size: 18px;
+      }
+  
+      span {
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+      }
+  
+      .social {
+        margin-top: 15px;
+        a {
+          color: $grey;
+          &:hover {
+            color: $blue;
+          }
+  
+        }
+  
+        i {
+          font-size: 18px;
+          margin: 0 2px;
+        }
+      }
+    }
+  }

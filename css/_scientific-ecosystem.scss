@@ -1,0 +1,64 @@
+#features {
+    @extend %dark-blue-section-base;
+    padding: 60px 0 0 0;
+    overflow: hidden;
+
+    .features-img {
+        text-align: center;
+        padding-top: 20px;
+
+        @media (min-width: 769px) {
+            padding-top: 120px;
+            margin-top: -200px;
+
+            // Center the image in the column
+            // for screeens higher than 769px wide.
+            img {
+                max-width: 100%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .box {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+
+        i {
+            // color: $white;
+            font-size: 40px;
+            transition: 0.5s;
+
+            &:before {
+                background: $white;
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .title {
+        font-weight: 300;
+        margin-bottom: 15px;
+        font-size: 22px;
+        color: $blue;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .section-description {
+        padding-bottom: 10px;
+    }
+}

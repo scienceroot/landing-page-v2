@@ -1,0 +1,11 @@
+#partners {
+    @extend %white-section-base;
+    padding: 30px 0;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        transition: 0.3s;
+        padding: 15px 0;
+    }
+}

@@ -1,0 +1,72 @@
+#about {
+    @extend %white-section-base;
+    padding: 60px 0;
+    overflow: hidden;
+
+    @media (min-width: 1198px) {
+        .ytubePlayer {
+          width: 430px;
+          height: 300px;
+        }  
+      }
+      
+      @media (max-width: 1198px) {
+        .ytubePlayer {
+          width: 290px;
+          height: 300px;
+        }  
+      }
+
+    .about-img  {
+        height: 510px;
+        overflow: hidden;
+        img {
+            margin-left: -15px;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            height: auto;
+            img {
+                margin-left: 0;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .content {
+
+        .h2 {
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            font-style: italic;
+        }
+
+        p {
+        line-height: 26px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: $purple;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+#contact {
+    @extend %dark-blue-section-base;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    overflow: hidden;
+  
+    .contact-about {
+      h3 {
+        font-size: 36px;
+        margin: 0 0 10px 0;
+        padding: 0;
+        line-height: 1;
+        font-family: $accent-font;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color:  $blue;
+      }
+  
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $accent-font;
+      }
+    }
+  
+    .social-links {
+      padding-bottom: 20px;
+      a {
+        font-size: 18px;
+        display: inline-block;
+        background: $white;
+        color: $blue;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+        border: 1px solid $blue;
+        &:hover {
+          background: $blue;
+          color: $white;
+        }
+      }
+    }
+  
+    .info {
+  
+      i {
+        font-size: 32px;
+        line-height: 1;
+      }
+
+      a {
+          text-decoration: underline;
+      }
+  
+      p {
+        padding: 0 0 0 0;
+        line-height: 28px;
+        font-size: 14px;
+      }
+  
+    }
+  
+    .form {
+  
+      #sendmessage {
+        color: $blue;
+        border:1px solid $blue;
+        display:none;
+        text-align:center;
+        padding:15px;
+        font-weight:600;
+        margin-bottom:15px;
+      }
+  
+      #errormessage {
+        color: $red;
+        display:none;
+        border:1px solid $red;
+        text-align:center;
+        padding:15px;
+        font-weight:600;
+        margin-bottom:15px;
+      }
+  
+      #sendmessage.show, #errormessage.show, .show {
+        display:block;
+      }
+  
+      .validation {
+        color: $red;
+        display:none;
+        margin: 0 0 20px;
+        font-weight:400;
+        font-size:13px;
+      }
+  
+      input, textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+      }
+  
+      button[type="submit"] {
+        background: $blue;
+        border: 0;
+        border-radius: 20px;
+        padding: 8px 30px;
+        color: $white;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
