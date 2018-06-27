@@ -50,7 +50,7 @@
   &.header-fixed  {
     background-color: $dark-blue;
     padding: 20px 0;
-    height: 72px;
+    height: 85px;
     transition: all 0.5s;
   }
 
@@ -86,6 +86,10 @@
     text-align: center;
     vertical-align: top;
     // flex-direction: column;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   h3 {
@@ -118,6 +122,56 @@
       line-height: 24px;
       margin-bottom: 20px;
     }
+  }
+
+  .project_description_title {
+    @media (max-width: 425px) {
+      // padding-top: 10px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+      // color:pink;
+      // padding-top: 30px;
+      font-size: 25px;
+    }
+  }
+
+  .apply_early_access {
+    @media (max-width: 425px) {
+      padding-top: 30px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+       // color:red;
+      padding-top: 100px;
+      font-size: 25px;
+    }
+  }
+
+  .initial_coin_offering {
+    @media (max-width: 425px) {
+      padding-top: 30px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+      // color:yellow;
+      // padding-top: 30px;
+      font-size: 25px;
+    }
+  }
+
+  .stay_tuned_for_news_title {
+    @media (max-width: 425px) {
+      padding-top: 30px;
+      font-size: 18px;
+    }
+    // color:gold;
+
+    padding-top: 30px;
+    font-size: 25px;
   }
 
   #clockdiv{

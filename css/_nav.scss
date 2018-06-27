@@ -59,8 +59,10 @@
 #nav-menu-container {
   float: right;
   margin: 0;
+  padding-top: 10px;
 //  @media (max-width: 768px) {
-  @media (max-width: 1024px) {
+  // @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 }
@@ -75,6 +77,21 @@
     font-weight: 400;
     font-size: 14px;
     outline: none;
+
+    &.blue-button-menu {
+      background-color: $blue;
+      border: 0;
+      border-radius: 20px;
+      padding: 8px 30px;
+      color: $white;
+    }
+
+    &.download_resources {
+      color: $blue;
+      text-transform: uppercase;
+      border-radius: 0px;
+      border-bottom: $blue 1px solid;
+    }
   }
 
   >  li {
@@ -133,7 +150,8 @@
   }
 
   // @media (max-width: 768px) {
-  @media (max-width: 1024px) {
+  // @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     display: inline;
   }
 
@@ -169,6 +187,13 @@
         display: block;
         outline: none;
         &:hover {
+          color: $white;
+        }
+        &.blue-button-menu {
+          background-color: $blue;
+          border: 0;
+          border-radius: 20px;
+          padding: 8px 30px;
           color: $white;
         }
       }
