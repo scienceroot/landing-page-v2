@@ -8,12 +8,17 @@
 
 .roadmap__timeline 
 {
+  @media only screen and (min-width: 1265px) {
+    display: none;
+  }
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 400px;
   text-align: center;
   position: relative;
   -webkit-box-align: start;
@@ -31,7 +36,8 @@
   }
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline
   {
@@ -65,7 +71,8 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item
   {
@@ -92,7 +99,8 @@
   transition: 300ms linear;
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item i
   {
@@ -111,7 +119,8 @@
   transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item p, .roadmap__timeline-item small
   {
@@ -150,7 +159,8 @@
   transform: translateX(-50%) translateY(0px);
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item > div
   {
@@ -180,7 +190,8 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item p
   {
@@ -196,7 +207,8 @@
   font-size: 14px;
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item small
   {
@@ -213,7 +225,8 @@
   background: #124276;
 }
 
-@media only screen and (max-width: 992px)
+// @media only screen and (max-width: 992px)
+@media only screen and (max-width: 1264px)
 {
   .roadmap__timeline-item:after
   {
@@ -250,4 +263,195 @@
 .roadmap__timeline-item--is-last:after
 {
   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.new-roadmap {
+  @media only screen and (max-width: 1266px) {
+      display: none;
+  }
+
+div.relative {
+  position: relative;
+  width: 1300px;
+  height: 500px;
+  // margin-left: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  // border: 2px solid #6AC259;
+} 
+
+%point-base {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  border: 2px solid $dark-blue;
+  background-color: $dark-blue;
+}
+
+%upper-point-base {
+  @extend %point-base;
+  
+  top: 50px;
+  position: absolute;
+}
+
+%lower-point-base {
+  @extend %point-base;
+
+  top: 312px;
+  position: absolute;
+}
+
+%roadmap-line
+{
+  display: block;
+  background-color: $blue;
+}
+
+div.upper-line {
+  @extend %roadmap-line;
+  width: $roadmap-line-width;
+  height: 2px;
+  margin-top: 53px;
+  margin-left: 100px;
+}
+
+div.middle-line {
+  @extend %roadmap-line;
+  width: 2px;
+  height: 260px;
+  margin-top: 0px;
+  margin-left: 1250px;
+}
+
+div.lower-line {
+  @extend %roadmap-line;
+  width: $roadmap-line-width;
+  height: 2px;
+  margin-top: 0;
+  margin-left: 100px;
+}
+
+div.is-completed {
+  @extend %point-base;
+
+  background-color: #6AC259;
+}
+
+div.active {
+  @extend %point-base;
+  
+  border: 2px solid $blue;
+  background-color: $blue;
+  -webkit-box-shadow: 0 0 15px $blue;
+  box-shadow: 0 0 15px $blue;
+}
+
+
+p {
+  left: 50%;
+  top: 30px;
+  width: 130px;
+  position: absolute;      
+  transform: translateX(-50%);
+  // border: 1px solid red;
+  text-align: center;
+
+  // color: pink;
+}
+
+small {
+  top: -50px;
+  left: 50%;
+  width: 130px;
+  position: absolute;      
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  // border: 1px solid black;
+
+  // color: red;
+}
+
+div.ppp1 {
+  @extend %upper-point-base;
+
+  left: $point1;
+}
+
+div.ppp2 {
+  @extend %upper-point-base;
+  
+  left: $point2; 
+}
+
+div.ppp3 {
+  @extend %upper-point-base;
+  left: $point3;
+}
+
+div.ppp4 {
+  @extend %upper-point-base;
+  left: $point4;
+}
+div.ppp5 {
+  @extend %upper-point-base;
+  left: $point5;
+}
+div.ppp6 {
+  @extend %upper-point-base;
+  left: $point6;
+}
+
+div.ppp7 {
+  @extend %upper-point-base;
+  left: $point7;
+}
+div.ppp8 {
+  @extend %upper-point-base;
+  left: $point8;
+}
+div.ppp9 {
+  @extend %lower-point-base;
+  left: $point8;
+}
+div.ppp10 {
+  @extend %lower-point-base;
+  left: $point7;
+}
+div.ppp11 {
+  @extend %lower-point-base;
+  left: $point6;
+}
+div.ppp12 {
+  @extend %lower-point-base;
+  left: $point5;
+}
+div.ppp13 {
+  @extend %lower-point-base;
+  left: $point4;
+}
+div.ppp14 {
+  @extend %lower-point-base;
+  left: $point3;
+}
+div.ppp15 {
+  @extend %lower-point-base;
+  left: $point2;
+}
+div.ppp16 {
+  @extend %lower-point-base;
+  left: $point1;
+}
+
 }
