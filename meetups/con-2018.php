@@ -39,18 +39,18 @@
     <section id="about">
       <div class="container">
         <div class="section-header">
-          <h3 class="section-title">CONTENTshift</h3>
+          <h3 class="section-title">CON 2018: Blockchain for Science</h3>
           <span class="section-divider"></span>
           <p class="section-description">
-            29.06.2018<br />
-            Frankfurt, Germany <br />
-            <a href="https://www.contentshift.de/en/contentshift/programme/ " target="_blank">
-            https://www.contentshift.de/en/contentshift/programme/</a>
+            05 - 06.11.2018<br />
+            Berlin, Germany <br />
+            <a href="https://www.blockchainforsciencecon.com/program" target="_blank">
+            https://www.blockchainforsciencecon.com/program</a>
           </p>
         </div>
         <?php
-          require_once('functions.php');
-          showSciencerootMeetupPictures("content-shift");
+          //require_once('functions.php');
+          //showSciencerootMeetupPictures("content-shift");
         ?>
       </div>
     </section>

@@ -5,23 +5,23 @@
   
     img {
         max-width: 100%;
-        opacity: 0.5;
-        transition: 0.3s;
+        // opacity: 0.5;
+        // transition: 0.3s;
         padding: 15px 0;
 
-        &:hover {
-            opacity: 1;
-        }
+        // &:hover {
+        //     opacity: 1;
+        // }
     }
 
     a {
         color: $dark-blue;
-        opacity: 0.5;
-        transition: 0.3s;
+        // opacity: 0.5;
+        // transition: 0.3s;
 
-        &:hover {
-            opacity: 1;
-            text-decoration: none;
-        }
+        // &:hover {
+        //     opacity: 1;
+        //     text-decoration: none;
+        // }
     }
 }

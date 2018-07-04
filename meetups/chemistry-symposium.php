@@ -48,6 +48,10 @@
             http://acad-icht.tm.edu.ro/cercetareRO.html</a>
           </p>
         </div>
+        <?php
+          require_once('functions.php');
+          showSciencerootMeetupPictures("chemistry-symposium");
+        ?>
       </div>
     </section>
   </main>
