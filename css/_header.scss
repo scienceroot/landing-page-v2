@@ -210,6 +210,14 @@
     cursor: pointer;
   }
 
+  button {
+    background-color: $blue;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: $white;
+  }
+
   // .btn-get-started {
   //   font-family: $heading-font;
   //   font-weight: 400;

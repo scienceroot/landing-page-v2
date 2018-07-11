@@ -129,6 +129,33 @@
       margin: 0;
     }
   }
+
+  // This style applies in the normal menu.
+  button {
+    background-color: $white;
+    border: 0;
+    padding: 8px 30px;
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+
+    &:hover {
+      cursor: pointer;
+      color: $blue;
+    }
+  }
+  
+  // This style applies in the normal menu.
+  button.blue-button-menu {
+    background-color: $blue;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: $white;
+  }
 }
 
 #mobile-nav-toggle {
@@ -218,6 +245,26 @@
     .menu-item-active {
       color: $blue;
     }
+  }
+
+  // This style applies in the mobile sliding menu.
+  button {
+    background-color: transparent;
+    padding: 10px 22px 10px 15px;
+    border: 0;
+    color: $white;
+    transition: 0.3s;
+    display: block;
+    font-size: 16px;
+    text-transform: none;
+  }
+
+  button.blue-button-menu {
+    background-color: $blue;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: $white;
   }
 }
 
