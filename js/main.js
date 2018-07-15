@@ -133,4 +133,33 @@ jQuery(document).ready(function($) {
 
   $('a.disable').click(function(e) { e.preventDefault(); });
 
+  $.get('../ito.txt', function(data) {    
+    $('#ito_sum').append(data);
+    console.log("fisier: " + data);
+    var ito_number = parseFloat(data.replace(',',''));
+    if (ito_number > 500000)
+    {
+      ito_number = 500000;
+    }
+
+    if (ito_number == 0)
+    {
+      ito_number = 1;
+    }
+
+    if (isNaN(ito_number))
+    {
+      $('#ito_sum').text("\u20AC " + 500000);
+      ito_number = 1;
+    }
+
+    var percentage = 0;
+    if (ito_number > 5000)
+    {
+      percentage = ito_number / 5000; 
+    }    
+    
+    $('.progress-bar').css('width', percentage+'%').attr('aria-valuenow', percentage);
+    $('.progress-bar').text(percentage + '%');
+  });
 });
